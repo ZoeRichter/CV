@@ -2,11 +2,8 @@
 % @brief    LaTeX2e Resume for Kathryn D. Huff
 
 \documentclass[margin,line]{admin/resume}
-% \usepackage{bibentry}
-% \makeatletter\let\saved@bibitem\@bibitem\makeatother
 \usepackage[breaklinks]{hyperref}
 \def\UrlBreaks{\do\/\do-}
-% \makeatletter\let\@bibitem\saved@bibitem\makeatother
 \usepackage{doi}
 \hypersetup{
     colorlinks=true,%
@@ -15,6 +12,8 @@
     breaklinks=true
 }
 \urlstyle{same}
+
+\usepackage{fontawesome5} % for GitHub logo
 
 \usepackage{etoolbox}
 \usepackage[backend=biber,style=numeric,sorting=nyt,
@@ -45,22 +44,19 @@
 
 %______________________________________________________________________________________________________________________
 \begin{document}
-\name{\Large Kathryn D. Huff}
+\name{\Large Liam M. Pohlmann}
 \begin{resume}
-
-  %\bibliographystyle{katyunsrt}
-  % \bibliographystyle{abbrvurl-huff}
-  % \nobibliography{cv}
 
   % Contact Information
   \section{\mysidestyle Contact\\Information}
-  \textsl{Associate Professor}
-  \hfill Mobile: (281) 734-1342 \vspace{0mm}\\\vspace{0mm}%
-  \textsl{Dept. of Nuclear, Plasma, and Radiological Engineering}
-  \hfill UIUC e-mail: \href{mailto:kdhuff@illinois.edu}{kdhuff@illinois.edu}       \vspace{0mm}\\\vspace{0mm}%
+  \textsl{Graduate Research Assistant}
+  \hfill university email: \href{mailto:liamp2@illinois.edu}{liamp2@illinois.edu}  \vspace{0mm}\\  \vspace{0mm}
   \textsl{University of Illinois at Urbana-Champaign}
-  \hfill personal e-mail:
-  \href{mailto:katyhuff@gmail.com}{katyhuff@gmail.com}       \vspace{0mm}\\\vspace{-4mm}%
+  \hfill personal email: \href{mailto:liam.pohlmann@gmail.com}{liam.pohlmann@gmail.com} \vspace{0mm}\\  \vspace{0mm}
+  \textsl{Dept. of Nuclear, Plasma, \& Radiological Engineering}
+  \hfill GitHub: \href{https://github.com/LP1012}{\faGithub LP1012} \vspace{0mm}\\  \vspace{0mm}
+  \hfill LinkedIn: \href{https://www.linkedin.com/in/liam-pohlmann-34b000297/}{\faLinkedin Liam Pohlmann}
+
 
   %__________________________________________________________________________________________________________________
   % Resume Objective
@@ -69,9 +65,7 @@
   %__________________________________________________________________________________________________________________
   % Research Interests
   \section{\mysidestyle Research\\Interests}
-  Advanced nuclear reactors and fuel cycles, multi-physics
-  simulation, energy systems analysis,
-  scientific computation, nuclear energy policy.
+  Advance nuclear reactors, neutral particle transport, reactor multiphysics, scientific computing, open source software.
   %
   %__________________________________________________________________________________________________________________
   % Academic Appointments
