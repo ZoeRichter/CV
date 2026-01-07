@@ -42,6 +42,12 @@
   {}%
 }%%
 
+\newcommand{\cvbibsection}[2]{
+  \section{\mysidestyle #1}
+  \vspace{0mm}
+  \printbibliography[heading=none,keyword=#2]
+}
+
 %______________________________________________________________________________________________________________________
 \begin{document}
 \name{\Large Liam M. Pohlmann}
@@ -100,9 +106,11 @@
   %           \vspace{-2mm}
   %\section{\mysidestyle Submitted\\Journal\\Publications}
   %            Submitted Journal Publications \vspace{-2mm}\\\vspace{-3mm}%
+
   %__________________________________________________________________________________________________________________
   % Conference Publications
-  \printbibliography[heading=bibnumbered,title={\mysidestyle Conference Papers},keyword=ConfPaper]
+  \cvbibsection{Conference Papers}{ConfPaper}
+
 
   %__________________________________________________________________________________________________________________
   % Editorials
@@ -113,7 +121,7 @@
 
   %__________________________________________________________________________________________________________________
   % Technical Reports
-  \printbibliography[heading=bibnumbered,title={\mysidestyle Technical Reports},keyword=TechReport]
+  \cvbibsection{Technical Reports}{TechReport}
 
   %__________________________________________________________________________________________________________________
   % Other Publications
