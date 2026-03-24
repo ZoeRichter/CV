@@ -1,5 +1,6 @@
 %______________________________________________________________________________________________________________________
-% @brief    LaTeX2e Resume for Kathryn D. Huff
+% @brief    LaTeX2e Resume for Zoe Richter,
+% Based on Liam Pohlmann's CV, which is based on Kathryn D. Huff's CV
 
 \documentclass[margin,line]{admin/resume}
 \usepackage[breaklinks]{hyperref}
@@ -22,9 +23,7 @@
 \addbibresource{cv.bib}
 
 % Bold my name in bibliography -- taken from https://www.hansenlab.org/cv_bibliography_tex
-%
-% To use, see the current bib file. I am including the rest of his annotations just in case, but I don't see myself necessarily using them... 
-% Perhaps if I become a professor? You will need to add the keywords and auth+an sections manually (Zotero can't do this yet), so just use Zotero to create the bib items and copy them in manually. 
+
 % This will get tedious if you get lazy, so DON'T. :-)
 \renewcommand*{\mkbibnamegiven}[1]{
 \ifitemannotation{highlight}
@@ -50,7 +49,7 @@
 
 %______________________________________________________________________________________________________________________
 \begin{document}
-\name{\Large Liam M. Pohlmann}
+\name{\Large Zoe R. Richter}
 \begin{resume}
 
   % Contact Information
@@ -63,8 +62,8 @@
   %Seeking research and teaching opportunities in nuclear engineering and scientific computation.%
   %__________________________________________________________________________________________________________________
   % Research Interests
-  \section{\mysidestyle Research\\Interests}
-  Advance nuclear reactors, neutral particle transport, reactor multiphysics, scientific computing, open source software.
+  %\section{\mysidestyle Research\\Interests}
+  %Advance nuclear reactors, neutral particle transport, reactor multiphysics, scientific computing, open source software.
   %
   %__________________________________________________________________________________________________________________
   % Academic Appointments
@@ -82,7 +81,7 @@
 
   %__________________________________________________________________________________________________________________
   % Honors and Awards
-  \input{src/honors-and-awards.tex}
+  %\input{src/honors-and-awards.tex}
 
   %__________________________________________________________________________________________________________________
   % Grants Awarded
