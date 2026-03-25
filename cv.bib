@@ -1,4 +1,27 @@
 
+@software{richterArfcGhastly2025,
+	title = {arfc/ghastly},
+	rights = {{BSD}-3-Clause},
+	url = {https://github.com/arfc/ghastly},
+	abstract = {A python package to handle pebble packing and movement in reactor core volumes.},
+	publisher = {Advanced Reactors and Fuel Cycles},
+	author = {Richter, Zoe},
+	keywords = {SoftwareData}
+}
+
+@misc{richter_small-scale_2026,
+	title = {Small-Scale {PB}-{HTGR} Recirculating {DEM} Pebble Coordinate Data (40,000 pebbles)},
+	doi = {10.5281/zenodo.18704731},
+	abstract = {A dataset containing the pebble coordinate data for a recirculating, small-scale pebble-bed High Temperature Gas Cooled Reactor ({PB}-{HTGR}) created using a Ghastly-generated {LAMMPS} input file (see the 'recircf2-2m.json) Ghastly input file example in the Ghastly {GitHub} repository's /examples directory.  The simulation time step length is 2.6855275354389e-07 seconds, or approximately 0.27 microseconds.  Every 2.5 million simulation steps, pebbles inside the designated discharge zone (the bottom 6 cm of the outlet) are removed and placed at the top of the inlet instantaneously.  Then the pebbles are allowed to freefall, and the bed settles under gravity.
+
+The coordinates.tar tarball contains a series of txt files named step\_[N].txt, where [N] corresponds to the simulation step at which the data file was created.  Each file contains the complete coordinate data for all pebbles in the simulation at that point in time.  {ID} refers to the pebble's unqiue {ID} code, type is the particle's {LAMMPS} type, x, y, and z are the pebble center coordinates, and i\_pass, i\_recirc, i\_zone, and i\_layer are non-physical parameters used to track the randomly-assigned pass number for the pebble, the number of times it has recirculated, the pebble's original radial zone, and the pebble's original axial layer.  i\_zone and i\_layer are generally intended to be used to color the pebbles, acting as a visual guide (like tracer dye in a flow study, for example).
+
+The recirculated.tar tarball contains a series of txt files named step\_[N].txt, where [N] corresponds to the simulation step at which the data file was created.  Each file contains a list of the unique {IDs} of the pebbles that were selected for recirculation at that simulation step.},
+	publisher = {Zenodo},
+	author = {Richter, Zoe},
+	keywords = {SoftwareData}
+}
+
 @article{bachmannEnrichmentDynamicsAdvanced2021,
 	title = {Enrichment dynamics for advanced reactor {HALEU} support},
 	volume = {7},
